@@ -9,12 +9,14 @@
       font-family: Arial, sans-serif;
       background-color: #fff;
       color: #000;
+      line-height: 1.6;
     }
     header, section, footer {
       padding: 2em;
       max-width: 800px;
       margin: 0 auto;
-      border-bottom: 1px solid #000;
+      border-bottom: 1px solid #ddd;
+      background-color: #fafafa;
     }
     header {
       text-align: center;
@@ -23,20 +25,37 @@
     }
     h1 {
       margin: 0.2em 0;
+      font-size: 1.8em;
     }
     h2 {
-      border-bottom: 1px solid #000;
+      border-bottom: 2px solid #000;
       padding-bottom: 0.3em;
+      margin-top: 1.5em;
+      font-size: 1.4em;
+    }
+    h3 {
+      margin-top: 1em;
+      font-size: 1.2em;
+      border-left: 4px solid #000;
+      padding-left: 0.5em;
     }
     ul {
       list-style-type: square;
       padding-left: 1.5em;
+      margin-top: 0.5em;
+    }
+    li {
+      margin-bottom: 0.5em;
     }
     .category {
-      margin-top: 1em;
+      margin-top: 2em;
+      background-color: #fff;
+      padding: 1em;
+      border: 1px solid #ddd;
+      border-radius: 5px;
     }
     .multi-lang {
-      margin: 0.5em 0;
+      margin: 0.8em 0;
     }
     footer {
       text-align: center;
@@ -49,19 +68,25 @@
       text-decoration: underline;
     }
 
-    /* 讓試聽播放器排版美觀靠右 */
+    /* 音樂播放器設計 */
     .audio-block {
       text-align: right;
-      margin: 0.5em 0;
+      margin-top: 0.5em;
+      background-color: #f5f5f5;
+      padding: 0.5em;
+      border-radius: 5px;
     }
     .audio-label {
-      margin-bottom: 0.3em;
+      font-size: 0.95em;
+      margin-bottom: 0.2em;
       font-weight: bold;
+      display: block;
+      text-align: right;
     }
     .audio-block audio {
-      width: 250px;
+      width: 200px;
       max-width: 100%;
-      height: 30px;
+      height: 28px;
     }
   </style>
 </head>
@@ -103,7 +128,7 @@
         </li>
       </ul>
       <div class="audio-block">
-        <div class="audio-label">試聽 / Preview</div>
+        <span class="audio-label">試聽 / Preview / プレビュー</span>
         <audio controls src="pop_sample.mp3">
           您的瀏覽器不支援 audio 元素。
         </audio>
@@ -116,7 +141,7 @@
         </li>
       </ul>
       <div class="audio-block">
-        <div class="audio-label">試聽 / Preview</div>
+        <span class="audio-label">試聽 / Preview / プレビュー</span>
         <audio controls src="pop_ballad.mp3">
           您的瀏覽器不支援 audio 元素。
         </audio>
@@ -132,7 +157,7 @@
         </li>
       </ul>
       <div class="audio-block">
-        <div class="audio-label">試聽 / Preview</div>
+        <span class="audio-label">試聽 / Preview / プレビュー</span>
         <audio controls src="classical_sample.mp3">
           您的瀏覽器不支援 audio 元素。
         </audio>
