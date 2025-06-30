@@ -48,10 +48,20 @@
       color: #000;
       text-decoration: underline;
     }
-    audio {
-      margin-top: 0.5em;
-      width: 100%;
-      max-width: 400px;
+
+    /* 讓試聽播放器排版美觀靠右 */
+    .audio-block {
+      text-align: right;
+      margin: 0.5em 0;
+    }
+    .audio-label {
+      margin-bottom: 0.3em;
+      font-weight: bold;
+    }
+    .audio-block audio {
+      width: 250px;
+      max-width: 100%;
+      height: 30px;
     }
   </style>
 </head>
@@ -90,24 +100,27 @@
         <li>
           範例曲目 1 / Sample Piece 1 / サンプル曲1 ➜ 
           <a href="pop_sample.pdf" target="_blank">下載 PDF / Download / ダウンロード</a>
-          <br>
-          試聽 / Preview / プレビュー：
-          <audio controls>
-            <source src="pop_sample.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-          </audio>
         </li>
+      </ul>
+      <div class="audio-block">
+        <div class="audio-label">試聽 / Preview</div>
+        <audio controls src="pop_sample.mp3">
+          您的瀏覽器不支援 audio 元素。
+        </audio>
+      </div>
+
+      <ul>
         <li>
           流行抒情曲 / Pop Ballad ➜ 
           <a href="pop_ballad.pdf" target="_blank">下載 PDF / Download / ダウンロード</a>
-          <br>
-          試聽 / Preview / プレビュー：
-          <audio controls>
-            <source src="pop_ballad.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-          </audio>
         </li>
       </ul>
+      <div class="audio-block">
+        <div class="audio-label">試聽 / Preview</div>
+        <audio controls src="pop_ballad.mp3">
+          您的瀏覽器不支援 audio 元素。
+        </audio>
+      </div>
     </div>
 
     <div class="category">
@@ -116,13 +129,16 @@
         <li>
           範例曲目 A / Sample Piece A / サンプル曲A ➜ 
           <a href="classical_sample.pdf" target="_blank">下載 PDF / Download / ダウンロード</a>
-          <br>
-          試聽 / Preview / プレビュー：
-          <audio controls>
-            <source src="classical_sample.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-          </audio>
         </li>
+      </ul>
+      <div class="audio-block">
+        <div class="audio-label">試聽 / Preview</div>
+        <audio controls src="classical_sample.mp3">
+          您的瀏覽器不支援 audio 元素。
+        </audio>
+      </div>
+
+      <ul>
         <li>經典古典樂 / Classic Masterpieces / クラシック名曲</li>
       </ul>
     </div>
